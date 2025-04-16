@@ -27,6 +27,26 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8; /* adjust for brightness */
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: -1;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
