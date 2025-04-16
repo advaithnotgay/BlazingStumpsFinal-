@@ -19,17 +19,7 @@ body {
   color: #ffffff;
   line-height: 1.6;
   padding-top: 80px;
-}
 
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.6;
 }
 
 h1, h2 {
@@ -78,15 +68,32 @@ h1, h2 {
   color: #ff9d00;
 }
 
-/* Hero Section */
+/* Video background */
+#bg-video {
+  position: fixed;  /* Fixed to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;      /* Full width of the viewport */
+  height: 100vh;     /* Full height of the viewport */
+  object-fit: cover; /* Make sure the video covers the entire viewport */
+  z-index: -1;       /* Place the video behind all other elements */
+  opacity: 1;        /* Optional: Adjust this for transparency if needed */
+}
+
+/* Hero section - title and tagline over video */
 .hero {
-  height: 100vh;
-  background: radial-gradient(#1f1f1f, #0e0e0e);
+  position: relative;
+  height: 100vh; /* Full height of the viewport */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 1; /* Ensure it is above the video */
   padding: 2rem;
+}
+
+.hero-content {
+  color: #fff; /* White text on top of the video */
 }
 
 .hero-content h1 {
@@ -94,14 +101,12 @@ h1, h2 {
   font-size: 6rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  animation: fadeInDown 1.2s ease-out;
 }
 
 .tagline {
   font-size: 1.5rem;
   color: #ffbb33;
   margin-bottom: 2rem;
-  animation: fadeInUp 1.2s ease-out;
 }
 
 .btn-outline {
@@ -121,22 +126,6 @@ h1, h2 {
 .btn-outline:hover {
   background-color: white;
   color: black;
-}
-
-.btn-primary {
-  background-color: #ff4a00;
-  color: #fff;
-  padding: 0.8em 2em;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #ff9d00;
 }
 
 /* Main Content */
@@ -240,14 +229,22 @@ input:focus, textarea:focus {
     gap: 1rem;
     margin-top: 1rem;
   }
-  /* Mobile only: show menu icon, hide nav links */
+/* Hide menu icon on larger screens (laptop/desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile view (below 768px) */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: block; /* Show hamburger menu on mobile */
   }
 
   .nav-links {
-    display: none;
+    display: none; /* Hide nav links by default */
     flex-direction: column;
     background-color: #0e0e0e;
     position: absolute;
@@ -259,12 +256,11 @@ input:focus, textarea:focus {
   }
 
   .nav-links.show {
-    display: flex;
+    display: flex; /* Show nav links when the menu is toggled */
   }
 
   .nav-links li {
     margin: 1rem 0;
   }
-}
 }
 
