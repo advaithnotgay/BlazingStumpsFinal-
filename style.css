@@ -89,6 +89,7 @@ body::before {
 /* Hero Section */
 .hero {
   height: 100vh;
+  background: radial-gradient(#1f1f1f, #0e0e0e);
   display: flex;
   justify-content: center;
   align-items: center;
