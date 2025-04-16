@@ -240,5 +240,31 @@ input:focus, textarea:focus {
     gap: 1rem;
     margin-top: 1rem;
   }
+  /* Mobile only: show menu icon, hide nav links */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #0e0e0e;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+}
 }
 
