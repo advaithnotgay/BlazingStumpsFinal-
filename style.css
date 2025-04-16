@@ -28,15 +28,18 @@ h1, h2 {
 
 /* Navbar */
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent black */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1a1a1a;
   padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
   z-index: 1000;
+  backdrop-filter: blur(10px); /* optional blur effect for elegance */
 }
+
 
 .logo {
   font-size: 1.8rem;
@@ -44,39 +47,22 @@ h1, h2 {
   color: #ff4a00;
   font-family: 'Orbitron', sans-serif;
 }
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .nav-links a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
+  font-size: 1rem;
   font-weight: 600;
-  position: relative;
-  transition: transform 0.3s;
-}
-
-.nav-links a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #ff4a00;
-  transition: width 0.3s;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-  transform: scale(1.05);
-}
-
-.nav-links a:hover::after {
-  width: 100%;
+  transform: scale(1.1);
+  color: #ff9d00; /* subtle orange/gold */
 }
 
 /* Hero Section */
