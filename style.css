@@ -19,15 +19,7 @@ body {
   color: #ffffff;
   line-height: 1.6;
   padding-top: 80px;
-}
-
-h1, h2 {
-  font-family: 'Orbitron', sans-serif;
-  color: #ff4a00;
-  text-transform: uppercase;
-}
-
-#bg-video {
+    #bg-video {
   position: fixed;
   top: 0;
   left: 0;
@@ -35,18 +27,14 @@ h1, h2 {
   min-height: 100vh;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.8; /* adjust for brightness */
-}
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* dark overlay */
-  z-index: -1;
+  opacity: 0.6; /* adjust this as needed */
 }
 
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff4a00;
+  text-transform: uppercase;
+}
 /* Navbar */
 .navbar {
   position: fixed;
@@ -230,5 +218,5 @@ input:focus, textarea:focus {
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
-  }
+
 }
