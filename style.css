@@ -239,17 +239,6 @@ input:focus, textarea:focus {
   margin: 0 0.2rem;
 }
 
-/* Footer */
-.footer {
-  margin-top: 60px;
-  padding: 20px 0;
-  background: rgba(0, 0, 0, 0.6);
-  text-align: center;
-  color: white;
-  z-index: 2;
-  position: relative;
-}
-
 /* Animations */
 @keyframes fadeInDown {
   from {
@@ -392,50 +381,65 @@ input:focus, textarea:focus {
   margin-bottom: 15px;
   filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
 }
-.footer-columns {
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 50px 80px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #194d33;
-  padding: 40px 20px;
-  color: white;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  border-top: 2px solid #222;
 }
 
-.footer-columns h3,
-.footer-columns h2 {
-  margin-bottom: 10px;
+footer h3 {
+  color: #ff4a00;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
 }
 
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links ul li a {
-  color: white;
+footer p,
+footer a {
+  color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 14px;
 }
 
-.footer-links ul li a:hover {
-  color: #fdbb2d;
+footer a:hover {
+  text-decoration: underline;
+  color: #ff4a00;
 }
 
-.social-icons a {
-  color: white;
-  margin-right: 15px;
-  font-size: 1.3rem;
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
 }
 
-.footer-contact p {
-  margin: 5px 0;
+.footer-socials a {
+  margin-right: 10px;
+  display: inline-block;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background-color: #ff4a00;
 }
 
 .footer-bottom {
-  background-color: #133d29;
-  color: #eee;
-  padding: 15px;
   text-align: center;
-  font-size: 0.9rem;
+  margin-top: 40px;
+  width: 100%;
+  font-size: 13px;
+  color: #aaa;
 }
+
+
 }

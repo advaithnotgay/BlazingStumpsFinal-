@@ -25,57 +25,51 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   countdown();
-
-  const footerInfo = `
-    <div class="bg-green-900 text-white py-10 px-8 grid md:grid-cols-4 gap-8 text-sm">
-      <div>
-        <h2 class="text-2xl font-bold text-yellow-400">Blazing Stumps 2025</h2>
-        <p class="mt-2 text-white">The Ultimate Under-19 Cricket Showdown organized by CMR NPS Bangalore, bringing together the best school teams from across Bangalore.</p>
-        <div class="flex gap-3 mt-4">
-          <a href="#"><i class="fab fa-facebook-f bg-black p-2 rounded-full"></i></a>
-          <a href="#"><i class="fab fa-twitter bg-black p-2 rounded-full"></i></a>
-          <a href="#"><i class="fab fa-instagram bg-black p-2 rounded-full"></i></a>
-          <a href="#"><i class="fab fa-youtube bg-black p-2 rounded-full"></i></a>
-        </div>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold text-yellow-400">Quick Links</h3>
-        <ul class="mt-2 space-y-1">
-          <li><a href="/" class="hover:underline">Home</a></li>
-          <li><a href="/about.html" class="hover:underline">About</a></li>
-          <li><a href="/contact.html" class="hover:underline">Contact</a></li>
-          <li><a href="/register.html" class="hover:underline">Register</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold text-yellow-400">Tournament Info</h3>
-        <ul class="mt-2 space-y-1">
-          <li><a href="/rules.html" class="hover:underline">Rules & Regulations</a></li>
-          <li><a href="/schedule.html" class="hover:underline">Schedule</a></li>
-          <li><a href="/venue.html" class="hover:underline">Venue Information</a></li>
-          <li><a href="/prizes.html" class="hover:underline">Prizes & Awards</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold text-yellow-400">Contact Us</h3>
-        <ul class="mt-2 space-y-1">
-          <li><i class="fas fa-map-marker-alt mr-2"></i>CMR University, Bangalore</li>
-          <li><i class="fas fa-phone mr-2"></i>+91 9876543210</li>
-          <li><i class="fas fa-envelope mr-2"></i>info@blazingstumps.com</li>
-        </ul>
-      </div>
+const footerHTML = `
+<footer>
+  <div class="footer-section">
+    <h3>Blazing Stumps 2025</h3>
+    <p>The Ultimate Under-19 Cricket Showdown organized by CMR NPS Bangalore, bringing together the best school teams from across Bangalore.</p>
+    <div class="footer-socials">
+      <a href="#"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+      <a href="#"><i class="fab fa-twitter" style="color: white;"></i></a>
+      <a href="#"><i class="fab fa-instagram" style="color: white;"></i></a>
+      <a href="#"><i class="fab fa-youtube" style="color: white;"></i></a>
     </div>
+  </div>
 
-    <div class="bg-green-800 text-white text-center py-4 text-sm">
-      © 2025 Blazing Stumps. All Rights Reserved.<br>
-      Designed with <span class="text-red-500">❤</span> by CMR NPS Team
-    </div>
-  `;
+  <div class="footer-section">
+    <h3>Quick Links</h3>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="register.html">Register</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-  document.getElementById("footer-info").innerHTML = footerInfo;
+  <div class="footer-section">
+    <h3>Tournament Info</h3>
+    <a href="#">Rules & Regulations</a>
+    <a href="#">Schedule</a>
+    <a href="#">Venue</a>
+    <a href="#">Prizes</a>
+  </div>
+
+  <div class="footer-section">
+    <h3>Contact</h3>
+    <p>📍 CMR University, Bangalore</p>
+    <p>📞 +91 9876543210</p>
+    <p>✉ info@blazingstumps.com</p>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Blazing Stumps | CMR NPS Bangalore</p>
+    <p>Designed with ❤️ by the CMR Student Council</p>
+  </div>
+</footer>
+`;
+
+document.getElementById('footer-info').innerHTML = footerHTML;
+
 });
 
 
