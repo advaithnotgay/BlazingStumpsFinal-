@@ -392,5 +392,50 @@ input:focus, textarea:focus {
   margin-bottom: 15px;
   filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
 }
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #194d33;
+  padding: 40px 20px;
+  color: white;
+}
 
+.footer-columns h3,
+.footer-columns h2 {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #fdbb2d;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 15px;
+  font-size: 1.3rem;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  background-color: #133d29;
+  color: #eee;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
 }
