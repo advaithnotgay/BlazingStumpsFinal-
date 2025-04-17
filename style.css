@@ -90,6 +90,9 @@ h1, h2 {
   text-align: center;
   z-index: 1;
   padding: 2rem;
+  flex-direction: column; 
+  gap: 1.5rem; 
+  height: 100vh; 
 }
 
 .hero-content {
