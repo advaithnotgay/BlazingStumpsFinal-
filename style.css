@@ -262,5 +262,12 @@ input:focus, textarea:focus {
   .nav-links li {
     margin: 1rem 0;
   }
+  .countdown-timer {
+  margin-top: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  color: #ffbb33;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
 }
 
