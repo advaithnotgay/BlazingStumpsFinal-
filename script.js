@@ -63,7 +63,6 @@ const footerHTML = `
 
   <div class="footer-bottom">
     <p>&copy; 2025 Blazing Stumps | CMR NPS Bangalore</p>
-    <p>Designed with ❤️ by the CMR Student Council</p>
   </div>
 </footer>
 `;
