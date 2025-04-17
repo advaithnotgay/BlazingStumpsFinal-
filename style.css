@@ -381,5 +381,13 @@ input:focus, textarea:focus {
 .icon.green { color: #7FFF8D; }
 .icon.blue { color: #76C6FF; }
 .icon.orange { color: #FFB347; }
+  
+  .highlight-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
+}
 
 }
