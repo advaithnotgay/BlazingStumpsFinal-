@@ -19,7 +19,6 @@ body {
   color: #ffffff;
   line-height: 1.6;
   padding-top: 80px;
-
 }
 
 h1, h2 {
@@ -70,30 +69,30 @@ h1, h2 {
 
 /* Video background */
 #bg-video {
-  position: fixed;  /* Fixed to the viewport */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;      /* Full width of the viewport */
-  height: 100vh;     /* Full height of the viewport */
-  object-fit: cover; /* Make sure the video covers the entire viewport */
-  z-index: -1;       /* Place the video behind all other elements */
-  opacity: 1;        /* Optional: Adjust this for transparency if needed */
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 1;
 }
 
 /* Hero section - title and tagline over video */
 .hero {
   position: relative;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 1; /* Ensure it is above the video */
+  z-index: 1;
   padding: 2rem;
 }
 
 .hero-content {
-  color: #fff; /* White text on top of the video */
+  color: #fff;
 }
 
 .hero-content h1 {
@@ -181,6 +180,59 @@ input:focus, textarea:focus {
   outline: 2px solid #ff4a00;
 }
 
+/* Countdown Timer Styles */
+.countdown-container {
+  text-align: center;
+  margin-top: 3rem;
+  color: #fce8c1;
+  font-family: 'Orbitron', sans-serif;
+  animation: fadeInUp 1.2s ease-out;
+  position: relative;
+  z-index: 2;
+}
+
+.countdown-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fce8c1;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  min-width: 80px;
+  text-align: center;
+}
+
+.time-box span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.time-box p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #fce8c1;
+}
+
+.colon {
+  font-size: 2rem;
+  color: #fce8c1;
+  margin: 0 0.2rem;
+}
+
 /* Footer */
 .footer {
   background-color: #1a1a1a;
@@ -229,22 +281,16 @@ input:focus, textarea:focus {
     gap: 1rem;
     margin-top: 1rem;
   }
-/* Hide menu icon on larger screens (laptop/desktop) */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
-}
 
-/* Mobile view (below 768px) */
-@media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* Show hamburger menu on mobile */
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
   }
 
   .nav-links {
-    display: none; /* Hide nav links by default */
+    display: none;
     flex-direction: column;
     background-color: #0e0e0e;
     position: absolute;
@@ -256,59 +302,17 @@ input:focus, textarea:focus {
   }
 
   .nav-links.show {
-    display: flex; /* Show nav links when the menu is toggled */
+    display: flex;
   }
 
   .nav-links li {
     margin: 1rem 0;
   }
-  
-.countdown-container {
-  text-align: center;
-  margin-top: 3rem;
-  color: #f3e8d9;
 }
 
-.countdown-title {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  font-family: 'Orbitron', sans-serif;
+/* Hide menu icon on larger screens */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
 }
-
-.countdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.time-box {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 1rem 1.5rem;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  min-width: 80px;
-}
-
-.time-box span {
-  display: block;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.time-box p {
-  margin-top: 0.25rem;
-  font-size: 0.9rem;
-  color: #e0dcdc;
-}
-
-.colon {
-  font-size: 2rem;
-  color: #ffcc70;
-  font-weight: bold;
-}
-
-}
-
