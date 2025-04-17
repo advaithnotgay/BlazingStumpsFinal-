@@ -82,7 +82,8 @@ h1, h2 {
 /* Hero section - title and tagline over video */
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh; /* allows content below the fold */
+  padding-bottom: 3rem; /* gives breathing room before countdown */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,6 +121,7 @@ h1, h2 {
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .btn-outline:hover {
@@ -183,12 +185,13 @@ input:focus, textarea:focus {
 /* Countdown Timer Styles */
 .countdown-container {
   text-align: center;
-  margin-top: 3rem;
   color: #fce8c1;
   font-family: 'Orbitron', sans-serif;
   animation: fadeInUp 1.2s ease-out;
   position: relative;
   z-index: 2;
+  margin-top: 1rem;   /* small space from register button */
+  margin-bottom: 6rem; /* more space before tournament highlights */
 }
 
 .countdown-title {
