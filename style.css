@@ -388,8 +388,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 40px;
   font-family: 'Open Sans', sans-serif;
   border-top: 2px solid #222;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 300px;
 }
 
 footer h3 {
@@ -414,12 +421,6 @@ footer a:hover {
   color: #ff4a00;
 }
 
-.footer-section {
-  flex: 1;
-  min-width: 200px;
-  margin-bottom: 30px;
-}
-
 .footer-socials a {
   margin-right: 10px;
   display: inline-block;
@@ -439,6 +440,22 @@ footer a:hover {
   width: 100%;
   font-size: 13px;
   color: #aaa;
+}
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-section {
+    max-width: 100%;
+  }
+
+  .footer-socials a {
+    margin: 0 5px;
+  }
 }
 
 
