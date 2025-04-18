@@ -56,8 +56,8 @@ const footerHTML = `
 
   <div class="footer-section">
     <h3>Contact</h3>
-    <p>📍 CMR University, Bangalore</p>
-    <p>📞 +91 9876543210</p>
+    <p>📍 CMR National Public School, Bangalore</p>
+    <p>📞 +91 98765XXXXX</p>
     <p>✉ info@blazingstumps.com</p>
   </div>
 
