@@ -29,7 +29,7 @@ const footerHTML = `
 <footer>
   <div class="footer-section">
     <h3>Blazing Stumps 2025</h3>
-    <p>The Ultimate Under-19 Cricket Showdown organized by CMR NPS Bangalore, bringing together the best school teams from across Bangalore.</p>
+    <p>The Ultimate Under-14 Cricket Showdown organized by CMR NPS Bangalore, bringing together the best school teams from across Bangalore.</p>
     <div class="footer-socials">
       <a href="#"><i class="fab fa-facebook-f" style="color: white;"></i></a>
       <a href="#"><i class="fab fa-twitter" style="color: white;"></i></a>
