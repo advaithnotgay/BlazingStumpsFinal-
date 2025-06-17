@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+<video autoplay muted loop id="bg-video">
+ <source src="https://cdn.glitch.global/63abb32f-beea-404f-a9a2-0db86c54b8c7/WhatsApp%20Video%202025-04-18%20at%2011.15.26_ed265b22.mp4?v=1744955241769" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
   <nav class="navbar">
     <div class="logo">Blazing Stumps</div>
     <div class="menu-toggle" id="menu-toggle">☰</div>
@@ -20,75 +24,69 @@
     </ul>
   </nav>
 
-  <!-- Hero Section with Image Background -->
-  <header class="hero-image">
-    <div class="overlay">
-      <div class="hero-content">
-        <h1>Blazing Stumps 2025</h1>
-        <a href="register.html" class="btn-outline">Register Now</a>
-        <div class="countdown">
-          <div class="time-box">
-            <span id="days">00</span>
-            <p>Days</p>
-          </div>
-          <div class="colon">:</div>
-          <div class="time-box">
-            <span id="hours">00</span>
-            <p>Hours</p>
-          </div>
-          <div class="colon">:</div>
-          <div class="time-box">
-            <span id="minutes">00</span>
-            <p>Minutes</p>
-          </div>
-          <div class="colon">:</div>
-          <div class="time-box">
-            <span id="seconds">00</span>
-            <p>Seconds</p>
-          </div>
-        </div>
-      </div>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Blazing Stumps 2025</h1>
+      <a href="register.html" class="btn-outline">Register Now</a>
     </div>
+      <div class="countdown">
+    <div class="time-box">
+      <span id="days">00</span>
+      <p>Days</p>
+    </div>
+    <div class="colon">:</div>
+    <div class="time-box">
+      <span id="hours">00</span>
+      <p>Hours</p>
+    </div>
+    <div class="colon">:</div>
+    <div class="time-box">
+      <span id="minutes">00</span>
+      <p>Minutes</p>
+    </div>
+    <div class="colon">:</div>
+    <div class="time-box">
+      <span id="seconds">00</span>
+      <p>Seconds</p>
+    </div>
+  </div>
   </header>
-
-  <section class="highlights">
-    <h2 class="highlight-title">Tournament Highlights</h2>
-    <div class="highlight-cards">
-      <div class="card">
-        <img src="https://cdn.glitch.global/63abb32f-beea-404f-a9a2-0db86c54b8c7/trophy.png?v=1744870657121" alt="Trophy Icon" class="highlight-icon" />
-        <h3>Elite Competition</h3>
-        <p>Top under-14 cricket teams from schools across the state competing for glory.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn.glitch.global/63abb32f-beea-404f-a9a2-0db86c54b8c7/diamond.png?v=1744870664550" alt="Diamond Icon" class="highlight-icon" />
-        <h3>Attractive Prizes</h3>
-        <p>Cash prizes, trophies, and special recognition for outstanding performances.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn.glitch.global/63abb32f-beea-404f-a9a2-0db86c54b8c7/placeholder.png?v=1744870668883" alt="Venue Icon" class="highlight-icon" />
-        <h3>Premier Venue</h3>
-        <p>Hosted at the state of the art cricket facilities of CMR University, Bangalore.</p>
-      </div>
+<section class="highlights">
+  <h2 class="highlight-title">Tournament Highlights</h2>
+  <div class="highlight-cards">
+    <div class="card">
+      <img src="https://cdn.glitch.global/63abb32f-beea-404f-a9a2-0db86c54b8c7/trophy.png?v=1744870657121" alt="Trophy Icon" class="highlight-icon" />
+  <h3>Elite Competition</h3>
+      <p>Top under-14 cricket teams from schools across the state competing for glory.</p>
     </div>
-  </section>
+    <div class="card">
+      <img src="https://cdn.glitch.global/63abb32f-beea-404f-a9a2-0db86c54b8c7/diamond.png?v=1744870664550" alt="Diamond Icon" class="highlight-icon" />
+      <h3>Attractive Prizes</h3>
+      <p>Cash prizes, trophies, and special recognition for outstanding performances.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn.glitch.global/63abb32f-beea-404f-a9a2-0db86c54b8c7/placeholder.png?v=1744870668883" alt="Venue Icon" class="highlight-icon" />
+      <h3>Premier Venue</h3>
+      <p>Hosted at the state of the art cricket facilities of CMR University, Bangalore.</p>
+    </div>
+  </div>
+</section>
+<div id="footer-info"></div>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  const navItems = document.querySelectorAll('.nav-links a');
 
-  <div id="footer-info"></div>
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
 
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    const navItems = document.querySelectorAll('.nav-links a');
-
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
+  navItems.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
     });
-
-    navItems.forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('show');
-      });
-    });
-  </script>
-  <script src="script.js"></script>
+  });
+</script>
+<script src="script.js"></script>
 </body>
 </html>
