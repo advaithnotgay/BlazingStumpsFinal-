@@ -46,13 +46,6 @@ const footerHTML = `
     <a href="contact.html">Contact</a>
   </div>
 
-  <div class="footer-section">
-    <h3>Tournament Info</h3>
-    <a href="#">Rules & Regulations</a>
-    <a href="#">Schedule</a>
-    <a href="#">Venue</a>
-    <a href="#">Prizes</a>
-  </div>
 
   <div class="footer-section">
     <h3>Contact</h3>
