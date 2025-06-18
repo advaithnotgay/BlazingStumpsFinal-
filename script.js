@@ -50,8 +50,8 @@ const footerHTML = `
   <div class="footer-section">
     <h3>Contact</h3>
     <p>📍 CMR National Public School, Bangalore</p>
-    <p>📞 +91 98765XXXXX</p>
-    <p>✉ info@blazingstumps.com</p>
+    <p>📞 +91 90357 01738</p>
+    <p>✉ eventscmrnps@gmail.com</p>
   </div>
 
   <div class="footer-bottom">
