@@ -468,33 +468,6 @@ footer a:hover {
   }
 }
 
-@media (max-width: 480px) {
-  .countdown {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
-    gap: 0.5rem;
-    padding: 0 0.5rem;
-    scroll-behavior: smooth;
-  }
-
-  .time-box {
-    padding: 0.5rem 0.8rem;
-    min-width: 70px;
-    font-size: 0.8rem;
-    flex: 0 0 auto;
-  }
-
-  .time-box span {
-    font-size: 1.2rem;
-  }
-
-  .colon {
-    font-size: 1.2rem;
-    flex: 0 0 auto;
-  }
-}
-
 @media (min-width: 769px) {
   .menu-toggle {
     display: none;
@@ -522,4 +495,24 @@ footer a:hover {
     opacity: 1;
     transform: translateY(0);
   }
+  @media (max-width: 480px) {
+  .countdown {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .time-box {
+    padding: 0.5rem;
+    min-width: 60px;
+    font-size: 0.8rem;
+  }
+
+  .time-box span {
+    font-size: 1.2rem;
+  }
+
+  .colon {
+    font-size: 1.2rem;
+  }
 }
+}"
