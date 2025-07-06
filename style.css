@@ -495,4 +495,24 @@ footer a:hover {
     opacity: 1;
     transform: translateY(0);
   }
+  @media (max-width: 480px) {
+  .countdown {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .time-box {
+    padding: 0.5rem;
+    min-width: 60px;
+    font-size: 0.8rem;
+  }
+
+  .time-box span {
+    font-size: 1.2rem;
+  }
+
+  .colon {
+    font-size: 1.2rem;
+  }
+}
 }
