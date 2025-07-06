@@ -105,6 +105,7 @@ h1, h2 {
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
+
 .presented-by {
   font-size: 1.2rem;
   font-weight: 600;
@@ -167,9 +168,7 @@ h1, h2 {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 12px 28px rgba(255, 74, 0, 0.4);
   border-color: #ff4a00;
-
 }
-
 
 .form-section, .contact-form {
   margin-top: 3rem;
@@ -443,6 +442,28 @@ footer a:hover {
   .footer-socials a {
     margin: 0 5px;
   }
+
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .highlight-title {
+    font-size: 2rem;
+  }
+
+  .highlight-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .about-details {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 769px) {
@@ -473,5 +494,3 @@ footer a:hover {
     transform: translateY(0);
   }
 }
-}
-
