@@ -44,6 +44,7 @@ const footerHTML = `
     <a href="about.html">About</a>
     <a href="register.html">Register</a>
     <a href="contact.html">Contact</a>
+    <a href="Rules.html">Rules</a>
   </div>
 
 
